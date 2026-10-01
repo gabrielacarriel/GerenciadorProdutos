@@ -33,10 +33,11 @@
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.txtAtributoEspecifico = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.lblAtributo = new System.Windows.Forms.Label();
+            this.lblAtributoo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblAtributo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNome
@@ -63,7 +64,8 @@
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(178, 21);
             this.cmbTipo.TabIndex = 2;
-            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged_1);
+            this.cmbTipo.SelectionChangeCommitted += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // txtAtributoEspecifico
             // 
@@ -82,14 +84,14 @@
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // lblAtributo
+            // lblAtributoo
             // 
-            this.lblAtributo.AutoSize = true;
-            this.lblAtributo.Location = new System.Drawing.Point(92, 117);
-            this.lblAtributo.Name = "lblAtributo";
-            this.lblAtributo.Size = new System.Drawing.Size(28, 13);
-            this.lblAtributo.TabIndex = 5;
-            this.lblAtributo.Text = "Tipo";
+            this.lblAtributoo.AutoSize = true;
+            this.lblAtributoo.Location = new System.Drawing.Point(449, 125);
+            this.lblAtributoo.Name = "lblAtributoo";
+            this.lblAtributoo.Size = new System.Drawing.Size(28, 13);
+            this.lblAtributoo.TabIndex = 5;
+            this.lblAtributoo.Text = "Tipo";
             // 
             // label1
             // 
@@ -118,15 +120,25 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Atributo";
             // 
+            // lblAtributo
+            // 
+            this.lblAtributo.AutoSize = true;
+            this.lblAtributo.Location = new System.Drawing.Point(107, 117);
+            this.lblAtributo.Name = "lblAtributo";
+            this.lblAtributo.Size = new System.Drawing.Size(28, 13);
+            this.lblAtributo.TabIndex = 9;
+            this.lblAtributo.Text = "Tipo";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblAtributo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblAtributo);
+            this.Controls.Add(this.lblAtributoo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtAtributoEspecifico);
             this.Controls.Add(this.cmbTipo);
@@ -146,10 +158,11 @@
         private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.TextBox txtAtributoEspecifico;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Label lblAtributo;
+        private System.Windows.Forms.Label lblAtributoo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblAtributo;
     }
 }
 

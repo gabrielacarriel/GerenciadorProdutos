@@ -27,11 +27,11 @@ namespace GerenciadorProdutos
             // Altera o rótulo do campo específico de acordo com a seleção
             if (cmbTipo.SelectedItem.ToString() == "Físico")
             {
-                lblAtributo.Text = "Peso (Kg):";
+                lblAtributoo.Text = "Peso (Kg):";
             }
             else
             {
-                lblAtributo.Text = "Tamanho (MB):";
+                lblAtributoo.Text = "Tamanho (MB):";
             }
         }
 
@@ -76,6 +76,11 @@ namespace GerenciadorProdutos
             txtAtributoEspecifico.Clear();
             cmbTipo.SelectedIndex = 0;
             txtNome.Focus();
+        }
+
+        private void cmbTipo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
